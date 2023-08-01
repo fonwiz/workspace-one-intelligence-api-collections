@@ -1,0 +1,372 @@
+{
+	"info": {
+		"_postman_id": "90df255b-6b05-4f04-9eda-c3ab01f66791",
+		"name": "Azure integration",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Device isCompliant false",
+			"_postman_id": "d089fe51-72f3-4687-beb4-4a71c0d39ff6",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{azureBearerToken}}"
+					}
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"isCompliant\": false\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{azureBaseUrl}}/v1.0/:deviceID",
+					"host": [
+						"{{azureBaseUrl}}"
+					],
+					"path": [
+						"v1.0",
+						":deviceID"
+					],
+					"variable": [
+						{
+							"key": "deviceID",
+							"value": "devices(deviceId='${airwatch.devicesensors._ca_azuredeviceid}')",
+							"type": "string"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "3e9b81c8-12b0-44c3-829c-e149bc6d1439",
+					"name": "isCompliant false",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"isCompliant\": false\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/v1.0/:deviceID",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"v1.0",
+								":deviceID"
+							],
+							"variable": [
+								{
+									"key": "deviceID",
+									"value": "devices(deviceId='180993e6-1ed3-4cc1-90c6-76d694695ca3')"
+								}
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000"
+						},
+						{
+							"key": "request-id",
+							"value": "0b9e4237-e394-45ca-91f6-4579e14fcdf6"
+						},
+						{
+							"key": "client-request-id",
+							"value": "0b9e4237-e394-45ca-91f6-4579e14fcdf6"
+						},
+						{
+							"key": "x-ms-ags-diagnostic",
+							"value": "{\"ServerInfo\":{\"DataCenter\":\"North Europe\",\"Slice\":\"E\",\"Ring\":\"4\",\"ScaleUnit\":\"003\",\"RoleInstance\":\"DB1PEPF0001F9BC\"}}"
+						},
+						{
+							"key": "x-ms-resource-unit",
+							"value": "1"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 31 Jul 2023 09:45:59 GMT"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Device isCompliant true",
+			"_postman_id": "afe0c406-6830-4931-b952-7b291f4f5fd1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{azureBearerToken}}"
+					}
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"isCompliant\": true\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{azureBaseUrl}}/v1.0/:deviceID",
+					"host": [
+						"{{azureBaseUrl}}"
+					],
+					"path": [
+						"v1.0",
+						":deviceID"
+					],
+					"variable": [
+						{
+							"key": "deviceID",
+							"value": "devices(deviceId='${airwatch.devicesensors._ca_azuredeviceid}')",
+							"type": "string"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "8a32d281-1f36-442a-a95e-8e9ebdc555fe",
+					"name": "isCompliant true",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"isCompliant\": true\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/v1.0/:deviceID",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"v1.0",
+								":deviceID"
+							],
+							"variable": [
+								{
+									"key": "deviceID",
+									"value": "devices(deviceId='180993e6-1ed3-4cc1-90c6-76d694695ca3')"
+								}
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000"
+						},
+						{
+							"key": "request-id",
+							"value": "dfc1ac3b-7200-4629-a2a7-74f2568b6c58"
+						},
+						{
+							"key": "client-request-id",
+							"value": "dfc1ac3b-7200-4629-a2a7-74f2568b6c58"
+						},
+						{
+							"key": "x-ms-ags-diagnostic",
+							"value": "{\"ServerInfo\":{\"DataCenter\":\"North Europe\",\"Slice\":\"E\",\"Ring\":\"4\",\"ScaleUnit\":\"003\",\"RoleInstance\":\"DB1PEPF0001F9BC\"}}"
+						},
+						{
+							"key": "x-ms-resource-unit",
+							"value": "1"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 31 Jul 2023 09:46:15 GMT"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Users Refresh Token revoke",
+			"_postman_id": "e61ce020-d41d-435f-b343-7503935fd529",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{azureBearerToken}}"
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{azureBaseUrl}}/v1.0/users/:UPN/revokeSignInSessions",
+					"host": [
+						"{{azureBaseUrl}}"
+					],
+					"path": [
+						"v1.0",
+						"users",
+						":UPN",
+						"revokeSignInSessions"
+					],
+					"variable": [
+						{
+							"key": "UPN",
+							"value": "${airwatch.user.user_principle_name}",
+							"type": "string"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "c9a208eb-d782-4429-9c5d-7f9792e21dea",
+					"name": "Revoke Users Refresh Token",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": "https://graph.microsoft.com/v1.0/users/swarno@fonwiz.com/revokeSignInSessions"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false;charset=utf-8"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Location",
+							"value": "https://graph.microsoft.com"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000"
+						},
+						{
+							"key": "request-id",
+							"value": "00439b7f-05db-4f48-b9fe-9036e28beebe"
+						},
+						{
+							"key": "client-request-id",
+							"value": "00439b7f-05db-4f48-b9fe-9036e28beebe"
+						},
+						{
+							"key": "x-ms-ags-diagnostic",
+							"value": "{\"ServerInfo\":{\"DataCenter\":\"North Europe\",\"Slice\":\"E\",\"Ring\":\"4\",\"ScaleUnit\":\"003\",\"RoleInstance\":\"DB1PEPF0001F9C7\"}}"
+						},
+						{
+							"key": "x-ms-resource-unit",
+							"value": "1"
+						},
+						{
+							"key": "OData-Version",
+							"value": "4.0"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 30 Mar 2022 14:12:08 GMT"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"@odata.context\": \"https://graph.microsoft.com/v1.0/$metadata#Edm.Boolean\",\n    \"value\": true\n}"
+				}
+			]
+		}
+	]
+}
