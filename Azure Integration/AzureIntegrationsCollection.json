@@ -46,7 +46,7 @@
 					"variable": [
 						{
 							"key": "deviceID",
-							"value": "devices(deviceId='${airwatch.devicesensors._ca_azuredeviceid}')",
+							"value": "devices(deviceId='${airwatch.devicesensors._ca_win_azuread_deviceid}')",
 							"type": "string"
 						}
 					]
@@ -169,7 +169,7 @@
 					"variable": [
 						{
 							"key": "deviceID",
-							"value": "devices(deviceId='${airwatch.devicesensors._ca_azuredeviceid}')",
+							"value": "devices(deviceId='${airwatch.devicesensors._ca_win_azuread_deviceid}')",
 							"type": "string"
 						}
 					]
