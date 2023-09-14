@@ -152,7 +152,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"isCompliant\": true\n}",
+					"raw": "{\n  \"isCompliant\": true,\n  \"isManaged\": true\n}",
 					"options": {
 						"raw": {}
 					}
