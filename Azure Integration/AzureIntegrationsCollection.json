@@ -2,16 +2,12 @@
 	"info": {
 		"_postman_id": "90df255b-6b05-4f04-9eda-c3ab01f66791",
 		"name": "Azure integration",
-		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
 			"id": "device_iscompliant_false",
 			"name": "Device isCompliant false",
-			"_postman_id": "d089fe51-72f3-4687-beb4-4a71c0d39ff6",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
 			"request": {
 				"auth": {
 					"type": "bearer",
@@ -29,10 +25,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"isCompliant\": false\n}",
-					"options": {
-						"raw": {}
-					}
+					"raw": "{\n  \"isCompliant\": false\n}"
 				},
 				"url": {
 					"raw": "{{azureBaseUrl}}/v1.0/:deviceID",
@@ -67,10 +60,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"isCompliant\": false\n}",
-							"options": {
-								"raw": {}
-							}
+							"raw": "{\n  \"isCompliant\": false\n}"
 						},
 						"url": {
 							"raw": "{{baseUrl}}/v1.0/:deviceID",
@@ -131,10 +121,6 @@
 		{
 			"id": "device_iscompliant_true",
 			"name": "Device isCompliant true",
-			"_postman_id": "afe0c406-6830-4931-b952-7b291f4f5fd1",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
 			"request": {
 				"auth": {
 					"type": "bearer",
@@ -152,10 +138,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"isCompliant\": true,\n  \"isManaged\": true\n}",
-					"options": {
-						"raw": {}
-					}
+					"raw": "{\n  \"isCompliant\": true,\n  \"isManaged\": true\n}"
 				},
 				"url": {
 					"raw": "{{azureBaseUrl}}/v1.0/:deviceID",
@@ -190,10 +173,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"isCompliant\": true\n}",
-							"options": {
-								"raw": {}
-							}
+							"raw": "{\n  \"isCompliant\": true,\n  \"isManaged\": true\n}"
 						},
 						"url": {
 							"raw": "{{baseUrl}}/v1.0/:deviceID",
@@ -254,10 +234,6 @@
 		{
 			"id": "user_revoke_refresh_token",
 			"name": "Users Refresh Token revoke",
-			"_postman_id": "e61ce020-d41d-435f-b343-7503935fd529",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
 			"request": {
 				"auth": {
 					"type": "bearer",
