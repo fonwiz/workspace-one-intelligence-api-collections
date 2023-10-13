@@ -346,6 +346,120 @@
 					"body": "{\n    \"@odata.context\": \"https://graph.microsoft.com/v1.0/$metadata#Edm.Boolean\",\n    \"value\": true\n}"
 				}
 			]
+		},
+		{			
+			"id": "device_set_displayName",
+			"name": "Device set displayName",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{azureBearerToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"displayName\": \"name\"\n}"
+				},
+				"url": {
+					"raw": "{{azureBaseUrl}}/v1.0/:deviceID",
+					"host": [
+						"{{azureBaseUrl}}"
+					],
+					"path": [
+						"v1.0",
+						":deviceID"
+					],
+					"variable": [
+						{
+							"key": "deviceID",
+							"value": "devices(deviceId='${airwatch.devicesensors._ca_azuredeviceid}')"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Device set displayName",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"displayName\": \"name\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/v1.0/:deviceID",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"v1.0",
+								":deviceID"
+							],
+							"variable": [
+								{
+									"key": "deviceID",
+									"value": "devices(deviceId='180993e6-1ed3-4cc1-90c6-76d694695ca3')"
+								}
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000"
+						},
+						{
+							"key": "request-id",
+							"value": "dfc1ac3b-7200-4629-a2a7-74f2568b6c58"
+						},
+						{
+							"key": "client-request-id",
+							"value": "dfc1ac3b-7200-4629-a2a7-74f2568b6c58"
+						},
+						{
+							"key": "x-ms-ags-diagnostic",
+							"value": "{\"ServerInfo\":{\"DataCenter\":\"North Europe\",\"Slice\":\"E\",\"Ring\":\"4\",\"ScaleUnit\":\"003\",\"RoleInstance\":\"DB1PEPF0001F9BC\"}}"
+						},
+						{
+							"key": "x-ms-resource-unit",
+							"value": "1"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 31 Jul 2023 09:46:15 GMT"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
 		}
 	]
 }
